@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdkulpahw.a  CMakeFiles/dkulpahw.dir/bluetooth/BtRFCOMMServer.cpp.o CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o CMakeFiles/dkulpahw.dir/Camera.cpp.o CMakeFiles/dkulpahw.dir/SoundRecorder.cpp.o
+/usr/bin/ranlib libdkulpahw.a
