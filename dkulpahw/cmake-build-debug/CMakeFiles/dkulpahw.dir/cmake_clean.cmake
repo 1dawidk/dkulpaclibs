@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dkulpahw.dir/bluetooth/BtRFCOMMServer.cpp.o"
   "CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o"
   "CMakeFiles/dkulpahw.dir/Camera.cpp.o"
   "CMakeFiles/dkulpahw.dir/SoundRecorder.cpp.o"

@@ -1,9 +1,9 @@
 #ifndef MORTFIRMWARE_BLUETOOTHMANAGER_H
 #define MORTFIRMWARE_BLUETOOTHMANAGER_H
 
-#define BM_TAG "Bluetooth"
+#define BM_TAG "BluetoothManager"
+#define BM_RX_MAX_LEN       2048
 
-#include <dkulpaclibs/misc/Thread.h>
 #include <stdio.h>
 #include <string>
 #include <stdlib.h>
@@ -15,7 +15,17 @@
 #include <bluetooth/rfcomm.h>
 #include <bluetooth/sdp.h>
 #include <bluetooth/sdp_lib.h>
+#include <dkulpaclibs/misc/Thread.h>
 
+/**
+ * USAGE:
+ * 1) Create BluetoothManager object
+ * 2) Use start() method to run manager
+ * 3) For data write use write(string) method - Manager will write data
+ *      through socket as soon as possible
+ * 4) For data read user read() method - Manager will return data buffered
+ *      from socket read buffer
+ */
 
 using namespace std;
 
@@ -25,32 +35,55 @@ class BluetoothManager: public Thread {
 public:
     explicit BluetoothManager();
 
+    //Check if any client is connected
     bool isCliConnected();
-    void write(const char* data, int len);
 
-    void onStop() override;
+    //Write / read data through RFComm server
+    void write(string data);
+    string read(int max_len);
 
-protected:
-    void onRun() override;
+    //Start Bluetooth Manager
+    void start() override;
 
 private:
+    //Define Thread reqired methods
+    void onStart() override;
+    void onRun() override;
+    void onStop() override;
 
-    sdp_session_t* session;
-    int soc;
-    int cli;
-    sockaddr_rc_t loc_addr;
-    sockaddr_rc_t rem_addr;
+    //Register new RFComm server
+    sdp_session_t *register_service(uint8_t ch);
+    //Open Bt device, socket and register server
+    void open();
 
-    string cmdBuf;
+    //Try to connect to first available client
+    void connectFirstClient();
+
+    //Test input if there is any data available in read buffer
+    string testInput();
+
+    //Close client connection
+    void closeConnection();
+
+
+
+    //Bt adapter vars
+    sdp_session_t* session; //Session
+    int soc;                //Socket
+    int cli;                //Connected client
+    sockaddr_rc_t locAddr; //Local bt adapter's address
+    sockaddr_rc_t remAddr; //Connected client address
+
+//    struct timeval timeout;
+
+    string rxBuff;          //Receive data buffer
+    string txBuff;          //Transmit data buffer
 
     fd_set set;
-    struct timeval timeout;
 
-    sdp_session_t *register_service(uint8_t ch);
-    void open();
-    void waitForClient();
-    string readCliBuff();
-    string retrieveCmd(string msg);
+    //Thread
+    pthread_mutex_t rxBuffMutex; //Rx buffer mutex
+    pthread_mutex_t txBuffMutex; //Tx buffer mutex
 };
 
 

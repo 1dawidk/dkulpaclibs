@@ -2,8 +2,11 @@
 
 #Build misc library
 echo "Building dkulpaclibs..."
+cd ./dkulpamisc
 cmake --build /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug --target all -- -O -j 2
+cd ./../dkulpahw
 cmake --build /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpahw/cmake-build-debug --target all -- -O -j 2
+cd ..
 
 #Create required dirs
 echo "Creating necessary dirs..."
@@ -18,19 +21,18 @@ mkdir -p /usr/local/include/dkulpaclibs/hw/bluetooth
 #Copy misc include files
 echo "Copy include files..."
 
-cp ./dkulpamisc/Clock.h /usr/local/include/dkulpaclibs/misc/
-cp ./dkulpamisc/Thread.h /usr/local/include/dkulpaclibs/misc/
-cp ./dkulpamisc/ConfigManager.h /usr/local/include/dkulpaclibs/misc
-cp ./dkulpamisc/debug/Log.h /usr/local/include/dkulpaclibs/misc/debug/
+cd ./dkulpamisc
+find . -type f | grep -i .h$ | xargs -i cp {} /usr/local/include/dkulpaclibs/misc/{}
+cd ..
 
-cp ./dkulpahw/Camera.h /usr/local/include/dkulpaclibs/hw/
-cp ./dkulpahw/SoundRecorder.h /usr/local/include/dkulpaclibs/hw/
-cp ./dkulpahw/bluetooth/BtRFCOMMServer.h /usr/local/include/dkulpaclibs/hw/bluetooth
-cp ./dkulpahw/bluetooth/BluetoothManager.h /usr/local/include/dkulpaclibs/hw/bluetooth
+cd ./dkulpahw
+find . -type f | grep -i .h$ | xargs -i cp {} /usr/local/include/dkulpaclibs/hw/{}
+cd ..
 
 #Copy find file
 echo "Copy cmake Find file..."
 cp ./Finddkulpaclibs.cmake /usr/local/lib/cmake/Finddkulpaclibs.cmake
+cp ./Finddkulpaclibs.cmake /home/dkulpa/ToolBox/CLion/bin/cmake/linux/share/cmake-3.13/Modules/Finddkulpaclibs.cmake
 
 #Copy misc bin
 echo "Copy binary files..."

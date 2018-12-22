@@ -28,8 +28,8 @@ void Log::onStart() {
 void Log::onRun() {
     pthread_mutex_lock(&(Log::queueM));
     if(!(Log::msgs).empty()){
-        cout << msgs[msgs.size()-1] << endl;
-        msgs.pop_back();
+        cout << msgs[0] << endl;
+        msgs.erase(msgs.begin());
     }
     pthread_mutex_unlock(&(Log::queueM));
     Thread::pause(2);

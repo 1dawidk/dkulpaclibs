@@ -1,14 +1,56 @@
 #include <bluetooth/bluetooth.h>
+#include <fcntl.h>
+#include <dkulpaclibs/misc/debug/Log.h>
 #include "BluetoothManager.h"
 
 BluetoothManager::BluetoothManager() {
+}
+
+void BluetoothManager::start() {
+    Thread::start();
+}
+
+void BluetoothManager::onStart() {
+    Log::write(BM_TAG, "[ Preparing... ]");
+    txBuff="";
+    rxBuff="";
+    rxBuffMutex= PTHREAD_MUTEX_INITIALIZER;
+    txBuffMutex= PTHREAD_MUTEX_INITIALIZER;
+
+
+    open();
+    Log::write(BM_TAG, "[ Started ]");
+}
+
+void BluetoothManager::onRun() {
+    string tmp;
+    string cmd;
+
+    if(isCliConnected()){
+        //Test input / read available data
+        pthread_mutex_lock(&rxBuffMutex);
+        rxBuff+= testInput();
+        if(rxBuff.length()>BM_RX_MAX_LEN)
+            rxBuff= rxBuff.substr(rxBuff.length()-BM_RX_MAX_LEN);
+        pthread_mutex_unlock(&rxBuffMutex);
+
+
+        pthread_mutex_lock(&txBuffMutex);
+        if(txBuff.length()>0)
+            send(cli, txBuff.c_str(), txBuff.length(), 0);
+        pthread_mutex_unlock(&txBuffMutex);
+
+
+        Thread::pause(50);
+    } else {
+        connectFirstClient();
+    }
 }
 
 void BluetoothManager::onStop() {
     close(cli);
     close(soc);
     sdp_close(session);
-    runThread=false;
 }
 
 bool BluetoothManager::isCliConnected() {
@@ -21,46 +63,30 @@ bool BluetoothManager::isCliConnected() {
     return (getpeername(cli,&socadr,&soclen)==0);
 }
 
-void BluetoothManager::write(const char *data, int len) {
+void BluetoothManager::write(string data) {
     if(isCliConnected()){
-        send(cli, data, len, 0);
+        txBuff+= data;
     }
 }
 
+string BluetoothManager::read(int max_len) {
+    string ret;
 
-void BluetoothManager::onRun() {
-    runThread=true;
-    string tmp;
-    string cmd;
-
-    cmdBuf="";
-
-    while(runThread){
-        if(isCliConnected()){
-            tmp= readCliBuff();
-            cmd= retrieveCmd(tmp);
-
-            if(!cmd.empty()){
-
-            }
-            usleep(200000);
-        } else {
-            if(cli!=0)
-                close(cli);
-            if(soc!=0)
-                close(soc);
-
-            sdp_close(session);
-            open();
-            waitForClient();
-        }
+    pthread_mutex_lock(&rxBuffMutex);
+    if(max_len>rxBuff.length()){
+        ret= rxBuff;
+    } else {
+        ret= rxBuff.substr(0, (unsigned long)max_len);
     }
+    pthread_mutex_unlock(&rxBuffMutex);
+
+    return ret;
 }
 
 sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
     uint32_t svc_uuid_int[]= { 0x000001101  , 0x00001000, 0x80000080, 0x5f9b34fb };
-    const char *service_name = "Mort BT Commands Protocol";
-    const char *service_dsc = "Used to controll Mort Bot";
+    const char *service_name = "dkulpaclibs Bluetooth Manager";
+    const char *service_dsc = "Simple bluetooth manager with RF COMM profile";
     const char *service_prov = "Dawid Kulpa";
 
     bdaddr_t *anyAddr=new bdaddr_t();
@@ -74,19 +100,22 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
 
     uuid_t root_uuid, l2cap_uuid, rfcomm_uuid, svc_uuid,
             svc_class_uuid;
-    sdp_list_t *l2cap_list = 0,
-            *rfcomm_list = 0,
-            *root_list = 0,
-            *proto_list = 0,
-            *access_proto_list = 0,
-            *svc_class_list = 0,
-            *profile_list = 0;
-    sdp_data_t *channel = 0;
+
+    sdp_list_t *l2cap_list =        NULL,
+            *rfcomm_list =          NULL,
+            *root_list =            NULL,
+            *proto_list =           NULL,
+            *access_proto_list =    NULL,
+            *svc_class_list =       NULL,
+            *profile_list =         NULL;
+
+        sdp_data_t *channel =       NULL;
     sdp_profile_desc_t profile;
     sdp_record_t record = { 0 };
     sdp_session_t *session = 0;
 
     // set the general service ID
+    Log::write(BM_TAG, "Set the general service ID");
     sdp_uuid128_create(&svc_uuid, &svc_uuid_int);
     sdp_set_service_id(&record, svc_uuid);
 
@@ -94,27 +123,32 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
     sdp_uuid2strn(&svc_uuid, str, 256);
 
     // set the service class
+    Log::write(BM_TAG, "Set the service class");
     sdp_uuid16_create(&svc_class_uuid, SERIAL_PORT_SVCLASS_ID);
     svc_class_list = sdp_list_append(0, &svc_class_uuid);
     sdp_set_service_classes(&record, svc_class_list);
 
-    // set the bluetooth profile information
+    // set the Bluetooth profile information
+    Log::write(BM_TAG, "Set the Bt profile info");
     sdp_uuid16_create(&profile.uuid, SERIAL_PORT_PROFILE_ID);
     profile.version = 0x0100;
     profile_list = sdp_list_append(0, &profile);
     sdp_set_profile_descs(&record, profile_list);
 
     // make the service record publicly browsable
+    Log::write(BM_TAG, "Make the service record publicly browsable");
     sdp_uuid16_create(&root_uuid, PUBLIC_BROWSE_GROUP);
     root_list = sdp_list_append(0, &root_uuid);
     sdp_set_browse_groups(&record, root_list);
 
     // set l2cap information
+    Log::write(BM_TAG, "Set l2cap info");
     sdp_uuid16_create(&l2cap_uuid, L2CAP_UUID);
     l2cap_list = sdp_list_append(0, &l2cap_uuid);
     proto_list = sdp_list_append(0, l2cap_list);
 
-    // register the RFCOMM channel for RFCOMM sockets
+    // register the RFCOMM chanenel for RFCOMM sockets
+    Log::write(BM_TAG, "Register the RFCOMM channel for RFCOMM socket");
     sdp_uuid16_create(&rfcomm_uuid, RFCOMM_UUID);
     channel = sdp_data_alloc(SDP_UINT8, &ch);
     rfcomm_list = sdp_list_append(0, &rfcomm_uuid);
@@ -125,14 +159,17 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
     sdp_set_access_protos(&record, access_proto_list);
 
     // set the name, provider, and description
+    Log::write(BM_TAG, "Set the name, provider and descriptor");
     sdp_set_info_attr(&record, service_name, service_prov, service_dsc);
 
     // connect to the local SDP server, register the service record,
     // and disconnect
+    Log::write(BM_TAG, "Connect to the local SDP server, register the service record and disconnect");
     session = sdp_connect(anyAddr, localAddr, SDP_RETRY_IF_BUSY);
     sdp_record_register(session, &record, 0);
 
     // cleanup
+    Log::write(BM_TAG, "Cleanup");
     sdp_data_free(channel);
     sdp_list_free(l2cap_list, 0);
     sdp_list_free(rfcomm_list, 0);
@@ -146,50 +183,71 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
 
 void BluetoothManager::open() {
     char buff[20];
-    rem_addr = { 0 };    //Remote address
+    remAddr = { 0 };    //Remote address
 
     //Create socket
+    Log::write(BM_TAG, "Create socket");
     soc = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM);
+    Log::write(BM_TAG, "Set non blocking");
+    //fcntl(soc, F_SETFL, O_NONBLOCK);
 
     //Find free port
-    int ch, status;
-    loc_addr.rc_family = AF_BLUETOOTH;
-    loc_addr.rc_bdaddr = {0};
+    Log::write(BM_TAG, "Find free port");
+    int status;
+    uint8_t ch;
+    locAddr.rc_family = AF_BLUETOOTH;
+    locAddr.rc_bdaddr = {0};
     for( ch = 1; ch <= 30; ch++ ) {
-        loc_addr.rc_channel = ch;
-        status = bind(soc, (struct sockaddr *)&loc_addr, sizeof( loc_addr ) );
+        locAddr.rc_channel = ch;
+        status = bind(soc, (struct sockaddr *)&locAddr, sizeof( locAddr ) );
         if( status == 0 ) break;
     }
 
     //Register SPP service
+    Log::write(BM_TAG, "Register SPP service");
     session= register_service(ch);
 
     //Put socket into listening mode, set timeout val
+    Log::write(BM_TAG, "Put socket into listening mode");
     listen(soc, 1);
-    ba2str(&loc_addr.rc_bdaddr, buff);
+    ba2str(&locAddr.rc_bdaddr, buff);
 }
 
-void BluetoothManager::waitForClient() {
+void BluetoothManager::connectFirstClient(){
     char buf[20];
 
-    socklen_t opt = sizeof(rem_addr);
-    cli = accept(soc, (struct sockaddr *)&rem_addr, &opt);
-    ba2str( &rem_addr.rc_bdaddr, buf );
-    //supervisor->WriteTalkFile(TALKFILE_UI_KEY, BM_TAG, "cout", string("New client: ")+buf);
+    socklen_t opt = sizeof(remAddr);
+    cli = accept(soc, (struct sockaddr *)&remAddr, &opt);
+    ba2str( &remAddr.rc_bdaddr, buf );
+
+    if(cli>=0){
+        Log::write(BM_TAG, "Client connected with cli= %d", cli);
+        Log::write(BM_TAG, "Client's name %s", buf);
+
+        pthread_mutex_lock(&rxBuffMutex);
+        rxBuff="";
+        pthread_mutex_unlock(&rxBuffMutex);
+
+        pthread_mutex_lock(&txBuffMutex);
+        txBuff="";
+        pthread_mutex_unlock(&txBuffMutex);
+    }
 }
 
-string BluetoothManager::readCliBuff() {
+
+string BluetoothManager::testInput() {
     int bytes_read;
     char buf[256];
 
-    FD_ZERO(&set);
-    FD_SET(cli, &set);
-    timeout.tv_sec = 2;
-    timeout.tv_usec = 0;
-    if(select(cli + 1, &set, NULL, NULL, &timeout)==0)
-        return "";
+//    FD_ZERO(&set);
+//    FD_SET(cli, &set);
+//    timeout.tv_sec = 2;
+//    timeout.tv_usec = 0;
+//    if(select(cli + 1, &set, NULL, NULL, &timeout)==0)
+//        return "";
 
-    bytes_read = read(cli, buf, 20);
+    bytes_read = ::read(cli, buf, 20);
+
     if( bytes_read > 0 ) {
         buf[bytes_read]=0;
         return string(buf);
@@ -198,19 +256,8 @@ string BluetoothManager::readCliBuff() {
     return "";
 }
 
-string BluetoothManager::retrieveCmd(string msg) {
-    string cmd;
-
-    for(int i=0; i<msg.length(); i++){
-        if(msg[i]=='\n') {
-            cmd = cmdBuf;
-            cmdBuf = "";
-        } else if(msg[i]=='~'){
-            cmdBuf="";
-        } else {
-            cmdBuf+=msg[i];
-        }
-    }
-
-    return cmd;
+void BluetoothManager::closeConnection() {
+    //If client is open but not connected
+    if(cli)
+        close(cli);
 }
