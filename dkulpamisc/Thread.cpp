@@ -70,11 +70,14 @@ int Thread::findThreadPosById(int id) {
         if(Thread::threads[i]->getId()==id)
             return Thread::threads[i]->getId();
     }
-
+ 
     return -1;
 }
 
-void Thread::pause(int ms) {
-    struct timespec tp= {0, ms*1000};
+void Thread::pause(long ms) {
+    int rs= (int)(ms/1000);
+    int rms= (int)(ms%1000);
+
+    struct timespec tp= {rs, rms*1000000};
     nanosleep(&tp, NULL);
 }

@@ -84,6 +84,7 @@ private:
     //Thread
     pthread_mutex_t rxBuffMutex; //Rx buffer mutex
     pthread_mutex_t txBuffMutex; //Tx buffer mutex
+    pthread_mutex_t accBufferMutex; //Client data access mutex
 };
 
 

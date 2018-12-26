@@ -12,80 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e71902-954f-4269-adba-c8322c5e7f98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dkulpahw/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/Camera.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BtRFCOMMServer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BtRFCOMMServer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/Camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/Camera.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BtRFCOMMServer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/dkulpahw.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/dkulpahw.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/libdkulpahw.a" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/libdkulpahw.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Thread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/Thread.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dkulpamisc (kopia).cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dkulpamisc.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dkulpamisc.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libdkulpamisc.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libdkulpamisc.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/Log.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/debug/Log.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -110,25 +48,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Thread.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Thread.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="310">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Thread.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#45#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debug/Log.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="630">
               <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
             </state>
           </provider>
@@ -136,7 +77,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clock.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <folding>
+                <element signature="e#43#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -153,6 +101,8 @@
         <option value="$PROJECT_DIR$/Finddkulpaclibs.cmake" />
         <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/debug/Log.cpp" />
+        <option value="$PROJECT_DIR$/Thread.h" />
+        <option value="$PROJECT_DIR$/Thread.cpp" />
       </list>
     </option>
   </component>
@@ -178,12 +128,11 @@
             <path>
               <item name="dkulpamisc" type="b2602c69:ProjectViewProjectNode" />
               <item name="dkulpamisc" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dkulpamisc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dkulpamisc" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -247,17 +196,24 @@
       <workItem from="1544983129401" duration="355000" />
       <workItem from="1545395863605" duration="1848000" />
       <workItem from="1545473150627" duration="617000" />
+      <workItem from="1545513995511" duration="19000" />
+      <workItem from="1545515261537" duration="660000" />
+      <workItem from="1545560386342" duration="1443000" />
+      <workItem from="1545608827917" duration="595000" />
+      <workItem from="1545766575478" duration="1201000" />
+      <workItem from="1545775580692" duration="599000" />
+      <workItem from="1545790114296" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14001000" />
+    <option name="totallyTimeSpent" value="19021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27162367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28528073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,6 +233,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28528073" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3283582" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3283582" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -295,27 +272,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/debug/Log.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clock.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding>
+            <element signature="e#43#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Thread.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="310">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Thread.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clock.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/Log.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="324">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#45#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

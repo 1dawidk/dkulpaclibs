@@ -16,6 +16,7 @@ void BluetoothManager::onStart() {
     rxBuff="";
     rxBuffMutex= PTHREAD_MUTEX_INITIALIZER;
     txBuffMutex= PTHREAD_MUTEX_INITIALIZER;
+    accBufferMutex= PTHREAD_MUTEX_INITIALIZER;
 
 
     open();
@@ -30,16 +31,10 @@ void BluetoothManager::onRun() {
         //Test input / read available data
         pthread_mutex_lock(&rxBuffMutex);
         rxBuff+= testInput();
-        if(rxBuff.length()>BM_RX_MAX_LEN)
+        if(rxBuff.length()>BM_RX_MAX_LEN){
             rxBuff= rxBuff.substr(rxBuff.length()-BM_RX_MAX_LEN);
+        }
         pthread_mutex_unlock(&rxBuffMutex);
-
-
-        pthread_mutex_lock(&txBuffMutex);
-        if(txBuff.length()>0)
-            send(cli, txBuff.c_str(), txBuff.length(), 0);
-        pthread_mutex_unlock(&txBuffMutex);
-
 
         Thread::pause(50);
     } else {
@@ -54,19 +49,28 @@ void BluetoothManager::onStop() {
 }
 
 bool BluetoothManager::isCliConnected() {
-    if(cli==0 || soc==0)
+    pthread_mutex_lock(&accBufferMutex);
+
+    if(cli<=0 || soc==0) {
+        pthread_mutex_unlock(&accBufferMutex);
         return false;
+    }
 
     static struct sockaddr socadr={0};
     static socklen_t soclen=sizeof(socadr);
+    bool ret= (getpeername(cli,&socadr,&soclen)==0);
 
-    return (getpeername(cli,&socadr,&soclen)==0);
+    pthread_mutex_unlock(&accBufferMutex);
+
+    return ret;
 }
 
 void BluetoothManager::write(string data) {
-    if(isCliConnected()){
-        txBuff+= data;
-    }
+    data+="\n";
+
+    pthread_mutex_lock(&txBuffMutex);
+    send(cli, data.c_str(), data.length(), 0);
+    pthread_mutex_unlock(&txBuffMutex);
 }
 
 string BluetoothManager::read(int max_len) {
@@ -84,7 +88,7 @@ string BluetoothManager::read(int max_len) {
 }
 
 sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
-    uint32_t svc_uuid_int[]= { 0x000001101  , 0x00001000, 0x80000080, 0x5f9b34fb };
+    uint32_t svc_uuid_int[]= { 0x00001101  , 0x00001000, 0x80000080, 0x5f9b34fb };
     const char *service_name = "dkulpaclibs Bluetooth Manager";
     const char *service_dsc = "Simple bluetooth manager with RF COMM profile";
     const char *service_prov = "Dawid Kulpa";
@@ -189,7 +193,7 @@ void BluetoothManager::open() {
     Log::write(BM_TAG, "Create socket");
     soc = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM);
     Log::write(BM_TAG, "Set non blocking");
-    //fcntl(soc, F_SETFL, O_NONBLOCK);
+    fcntl(soc, F_SETFL, O_NONBLOCK);
 
     //Find free port
     Log::write(BM_TAG, "Find free port");
@@ -239,14 +243,7 @@ string BluetoothManager::testInput() {
     int bytes_read;
     char buf[256];
 
-//    FD_ZERO(&set);
-//    FD_SET(cli, &set);
-//    timeout.tv_sec = 2;
-//    timeout.tv_usec = 0;
-//    if(select(cli + 1, &set, NULL, NULL, &timeout)==0)
-//        return "";
-
-    bytes_read = ::read(cli, buf, 20);
+    bytes_read = ::read(cli, buf, 256);
 
     if( bytes_read > 0 ) {
         buf[bytes_read]=0;

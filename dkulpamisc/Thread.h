@@ -24,7 +24,7 @@ protected:
     pthread_t threadHandle;
     pthread_mutex_t runMu;
 
-    static void pause(int ms);
+    static void pause(long ms);
 private:
     bool finished;
     int id;

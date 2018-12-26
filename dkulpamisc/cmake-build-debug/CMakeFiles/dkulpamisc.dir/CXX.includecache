@@ -12,6 +12,10 @@ chrono
 time.h
 -
 
+/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.cpp
+Thread.h
+/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.h
+
 /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.h
 pthread.h
 -
@@ -21,20 +25,4 @@ vector
 -
 Clock.h
 /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Clock.h
-
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/debug/Log.cpp
-stdarg.h
--
-Log.h
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/debug/Log.h
-
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/debug/Log.h
-iostream
--
-vector
--
-string
--
-../Thread.h
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.h
 

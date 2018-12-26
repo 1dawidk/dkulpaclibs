@@ -1,10 +1,26 @@
 #!/bin/bash
 
+# Setup bluez
+#
+# nano /etc/systemd/system/dbus-org.bluez.service
+# ExecStart=/usr/lib/bluetooth/bluetoothd -> ExecStart=/usr/lib/bluetooth/bluetoothd --compat
+# sudo systemctl daemon-reload
+# sudo systemctl restart bluetooth
+# sudo chmod 777 /var/run/sdp
+
+echo "Config blueZ..."
+#sed -i -e 's/ExecStart=\/usr\/lib\/bluetooth\/bluetoothd/ExecStart=\/usr\/lib\/bluetooth\/bluetoothd --compat/g'
+#systemctl daemon-reload
+#systemctl restart bluetooth
+chmod 777 /var/run/sdp
+
 #Build misc library
 echo "Building dkulpaclibs..."
 cd ./dkulpamisc
 cmake --build /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug --target all -- -O -j 2
-cd ./../dkulpahw
+cd ..
+
+cd ./dkulpahw
 cmake --build /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpahw/cmake-build-debug --target all -- -O -j 2
 cd ..
 
