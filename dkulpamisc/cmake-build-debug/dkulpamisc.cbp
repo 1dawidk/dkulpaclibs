@@ -96,6 +96,18 @@
 		<Unit filename="/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.h">
 			<Option target="dkulpamisc"/>
 		</Unit>
+		<Unit filename="/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSON.cpp">
+			<Option target="dkulpamisc"/>
+		</Unit>
+		<Unit filename="/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSON.h">
+			<Option target="dkulpamisc"/>
+		</Unit>
+		<Unit filename="/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSONParser.cpp">
+			<Option target="dkulpamisc"/>
+		</Unit>
+		<Unit filename="/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSONParser.h">
+			<Option target="dkulpamisc"/>
+		</Unit>
 		<Unit filename="/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.cpp">
 			<Option target="dkulpamisc"/>
 		</Unit>

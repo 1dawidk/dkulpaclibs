@@ -73,14 +73,17 @@ void BluetoothManager::write(string data) {
     pthread_mutex_unlock(&txBuffMutex);
 }
 
-string BluetoothManager::read(int max_len) {
+string BluetoothManager::read() {
     string ret;
 
     pthread_mutex_lock(&rxBuffMutex);
-    if(max_len>rxBuff.length()){
-        ret= rxBuff;
+    size_t end_pos= rxBuff.find_first_of('\n');
+    if(end_pos!=string::npos){
+        ret= rxBuff.substr(0, end_pos);
+        rxBuff= rxBuff.substr(end_pos+1);
+        Log::write(BM_TAG, "%s", rxBuff.c_str());
     } else {
-        ret= rxBuff.substr(0, (unsigned long)max_len);
+        ret="";
     }
     pthread_mutex_unlock(&rxBuffMutex);
 

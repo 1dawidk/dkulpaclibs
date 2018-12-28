@@ -12,19 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e423c6a-25ee-47c7-9370-c9f83c966e68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../dkulpamisc/JSON.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dkulpamisc/JSON.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bluetooth/BluetoothManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bluetooth/BluetoothManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bluetooth/BluetoothManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/bluetooth/BluetoothManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libdkulpahw.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libdkulpahw.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpamisc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpamisc/Thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/Thread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpamisc/Thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/Thread.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/libdkulpamisc.a" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/libdkulpamisc.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/dkulpamisc.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpamisc/cmake-build-debug/dkulpamisc.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,20 +43,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bluetooth/BluetoothManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            <state relative-caret-position="1476">
+              <caret line="85" column="15" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bluetooth/BluetoothManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="80" selection-start-line="80" selection-end-line="81" selection-end-column="15" />
+            <state>
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <folding>
+                <element signature="e#149#167#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,12 +192,14 @@
       <workItem from="1545514026949" duration="1832000" />
       <workItem from="1545559914943" duration="4388000" />
       <workItem from="1545608827758" duration="1108000" />
-      <workItem from="1545790228743" duration="3517000" />
+      <workItem from="1545790228743" duration="3603000" />
+      <workItem from="1545847828575" duration="1621000" />
+      <workItem from="1545938989555" duration="2174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39378000" />
+    <option name="totallyTimeSpent" value="43259000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -202,7 +214,7 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34901366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36115327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -259,13 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bluetooth/BluetoothManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="80" selection-start-line="80" selection-end-line="81" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/x86_64-linux-gnu/sys/socket.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -282,8 +287,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bluetooth/BluetoothManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        <state relative-caret-position="1476">
+          <caret line="85" column="15" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluetooth/BluetoothManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="e#149#167#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

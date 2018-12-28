@@ -177,6 +177,60 @@ ConfigManager.cpp.s:
 	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.s
 .PHONY : ConfigManager.cpp.s
 
+JSON.o: JSON.cpp.o
+
+.PHONY : JSON.o
+
+# target to build an object file
+JSON.cpp.o:
+	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/JSON.cpp.o
+.PHONY : JSON.cpp.o
+
+JSON.i: JSON.cpp.i
+
+.PHONY : JSON.i
+
+# target to preprocess a source file
+JSON.cpp.i:
+	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/JSON.cpp.i
+.PHONY : JSON.cpp.i
+
+JSON.s: JSON.cpp.s
+
+.PHONY : JSON.s
+
+# target to generate assembly for a file
+JSON.cpp.s:
+	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/JSON.cpp.s
+.PHONY : JSON.cpp.s
+
+JSONParser.o: JSONParser.cpp.o
+
+.PHONY : JSONParser.o
+
+# target to build an object file
+JSONParser.cpp.o:
+	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o
+.PHONY : JSONParser.cpp.o
+
+JSONParser.i: JSONParser.cpp.i
+
+.PHONY : JSONParser.i
+
+# target to preprocess a source file
+JSONParser.cpp.i:
+	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/JSONParser.cpp.i
+.PHONY : JSONParser.cpp.i
+
+JSONParser.s: JSONParser.cpp.s
+
+.PHONY : JSONParser.s
+
+# target to generate assembly for a file
+JSONParser.cpp.s:
+	$(MAKE) -f CMakeFiles/dkulpamisc.dir/build.make CMakeFiles/dkulpamisc.dir/JSONParser.cpp.s
+.PHONY : JSONParser.cpp.s
+
 Thread.o: Thread.cpp.o
 
 .PHONY : Thread.o
@@ -246,6 +300,12 @@ help:
 	@echo "... ConfigManager.o"
 	@echo "... ConfigManager.i"
 	@echo "... ConfigManager.s"
+	@echo "... JSON.o"
+	@echo "... JSON.i"
+	@echo "... JSON.s"
+	@echo "... JSONParser.o"
+	@echo "... JSONParser.i"
+	@echo "... JSONParser.s"
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"

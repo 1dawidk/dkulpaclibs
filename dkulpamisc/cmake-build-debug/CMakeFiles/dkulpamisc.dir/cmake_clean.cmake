@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dkulpamisc.dir/Clock.cpp.o"
   "CMakeFiles/dkulpamisc.dir/Thread.cpp.o"
   "CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o"
+  "CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o"
+  "CMakeFiles/dkulpamisc.dir/JSON.cpp.o"
   "libdkulpamisc.pdb"
   "libdkulpamisc.a"
 )

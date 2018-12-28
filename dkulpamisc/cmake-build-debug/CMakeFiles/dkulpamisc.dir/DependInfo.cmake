@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Clock.cpp" "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Clock.cpp.o"
   "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.cpp" "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o"
+  "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSON.cpp" "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/JSON.cpp.o"
+  "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSONParser.cpp" "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o"
   "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.cpp" "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o"
   "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/debug/Log.cpp" "/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o"
   )

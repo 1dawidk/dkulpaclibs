@@ -40,7 +40,7 @@ public:
 
     //Write / read data through RFComm server
     void write(string data);
-    string read(int max_len);
+    string read();
 
     //Start Bluetooth Manager
     void start() override;

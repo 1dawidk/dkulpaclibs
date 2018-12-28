@@ -1,2 +1,2 @@
-/usr/bin/ar qc libdkulpamisc.a  CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o CMakeFiles/dkulpamisc.dir/Clock.cpp.o CMakeFiles/dkulpamisc.dir/Thread.cpp.o CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o
+/usr/bin/ar qc libdkulpamisc.a  CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o CMakeFiles/dkulpamisc.dir/Clock.cpp.o CMakeFiles/dkulpamisc.dir/Thread.cpp.o CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o CMakeFiles/dkulpamisc.dir/JSON.cpp.o
 /usr/bin/ranlib libdkulpamisc.a

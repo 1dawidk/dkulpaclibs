@@ -109,12 +109,40 @@ CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.cpp -o CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.s
 
+CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o: CMakeFiles/dkulpamisc.dir/flags.make
+CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o: ../JSONParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o -c /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSONParser.cpp
+
+CMakeFiles/dkulpamisc.dir/JSONParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dkulpamisc.dir/JSONParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSONParser.cpp > CMakeFiles/dkulpamisc.dir/JSONParser.cpp.i
+
+CMakeFiles/dkulpamisc.dir/JSONParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dkulpamisc.dir/JSONParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSONParser.cpp -o CMakeFiles/dkulpamisc.dir/JSONParser.cpp.s
+
+CMakeFiles/dkulpamisc.dir/JSON.cpp.o: CMakeFiles/dkulpamisc.dir/flags.make
+CMakeFiles/dkulpamisc.dir/JSON.cpp.o: ../JSON.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dkulpamisc.dir/JSON.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dkulpamisc.dir/JSON.cpp.o -c /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSON.cpp
+
+CMakeFiles/dkulpamisc.dir/JSON.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dkulpamisc.dir/JSON.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSON.cpp > CMakeFiles/dkulpamisc.dir/JSON.cpp.i
+
+CMakeFiles/dkulpamisc.dir/JSON.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dkulpamisc.dir/JSON.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/JSON.cpp -o CMakeFiles/dkulpamisc.dir/JSON.cpp.s
+
 # Object files for target dkulpamisc
 dkulpamisc_OBJECTS = \
 "CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o" \
 "CMakeFiles/dkulpamisc.dir/Clock.cpp.o" \
 "CMakeFiles/dkulpamisc.dir/Thread.cpp.o" \
-"CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o"
+"CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o" \
+"CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o" \
+"CMakeFiles/dkulpamisc.dir/JSON.cpp.o"
 
 # External object files for target dkulpamisc
 dkulpamisc_EXTERNAL_OBJECTS =
@@ -123,9 +151,11 @@ libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/debug/Log.cpp.o
 libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/Clock.cpp.o
 libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/Thread.cpp.o
 libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o
+libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/JSONParser.cpp.o
+libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/JSON.cpp.o
 libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/build.make
 libdkulpamisc.a: CMakeFiles/dkulpamisc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libdkulpamisc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libdkulpamisc.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/dkulpamisc.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dkulpamisc.dir/link.txt --verbose=$(VERBOSE)
 
