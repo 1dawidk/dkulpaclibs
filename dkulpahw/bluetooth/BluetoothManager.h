@@ -42,6 +42,9 @@ public:
     void write(string data);
     string read();
 
+    //Disconnect currently connected client
+    void closeConnection();
+
     //Start Bluetooth Manager
     void start() override;
 
@@ -61,10 +64,6 @@ private:
 
     //Test input if there is any data available in read buffer
     string testInput();
-
-    //Close client connection
-    void closeConnection();
-
 
 
     //Bt adapter vars

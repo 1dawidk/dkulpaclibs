@@ -29,12 +29,16 @@ void BluetoothManager::onRun() {
 
     if(isCliConnected()){
         //Test input / read available data
-        pthread_mutex_lock(&rxBuffMutex);
-        rxBuff+= testInput();
-        if(rxBuff.length()>BM_RX_MAX_LEN){
-            rxBuff= rxBuff.substr(rxBuff.length()-BM_RX_MAX_LEN);
+        tmp+= testInput();
+
+        if(tmp.length()>0) {
+            pthread_mutex_lock(&rxBuffMutex);
+            rxBuff+=tmp;
+            if (rxBuff.length() > BM_RX_MAX_LEN) {
+                rxBuff = rxBuff.substr(rxBuff.length() - BM_RX_MAX_LEN);
+            }
+            pthread_mutex_unlock(&rxBuffMutex);
         }
-        pthread_mutex_unlock(&rxBuffMutex);
 
         Thread::pause(50);
     } else {
@@ -81,7 +85,6 @@ string BluetoothManager::read() {
     if(end_pos!=string::npos){
         ret= rxBuff.substr(0, end_pos);
         rxBuff= rxBuff.substr(end_pos+1);
-        Log::write(BM_TAG, "%s", rxBuff.c_str());
     } else {
         ret="";
     }

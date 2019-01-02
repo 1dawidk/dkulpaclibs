@@ -1,14 +1,14 @@
-#ifndef DKULPAMISC_JSON_H
-#define DKULPAMISC_JSON_H
+#ifndef DKULPAMISC_POSTPAIRS_H
+#define DKULPAMISC_POSTPAIRS_H
 
 #include <string>
 #include <stdexcept>
 
 using namespace std;
 
-class JSON {
+class PostPairs {
 public:
-    explicit JSON(string content);
+    explicit PostPairs(string content);
 
     int getInt(string key, int &val);
     int getDouble(string key, double &val);

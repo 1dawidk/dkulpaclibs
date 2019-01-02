@@ -7,6 +7,12 @@ CMakeFiles/dkulpamisc.dir/Clock.cpp.o
 CMakeFiles/dkulpamisc.dir/ConfigManager.cpp.o
  /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.cpp
  /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.h
+CMakeFiles/dkulpamisc.dir/PostPairs.cpp.o
+ /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Clock.h
+ /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/PostPairs.cpp
+ /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/PostPairs.h
+ /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.h
+ /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/debug/Log.h
 CMakeFiles/dkulpamisc.dir/Thread.cpp.o
  /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Clock.h
  /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.cpp

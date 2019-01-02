@@ -5,6 +5,8 @@
 #
 #  Usage from an external project:
 #    In your CMakeLists.txt, add these lines:
+#       find_package(dkulpaclibs)
+#       
 #
 #    FIND_PACKAGE(dkulpaclibs REQUIRED)
 #    TARGET_LINK_LIBRARIES(MY_TARGET_NAME dkulpaclibs_misc_LIB dkulpaclibs_hw_LIB)
