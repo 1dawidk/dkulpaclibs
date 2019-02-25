@@ -10,4 +10,7 @@ CMakeFiles/dkulpahw.dir/SoundRecorder.cpp.o: ../SoundRecorder.h
 
 CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o: ../bluetooth/BluetoothManager.cpp
 CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o: ../bluetooth/BluetoothManager.h
+CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o: /usr/local/include/dkulpaclibs/misc/Clock.h
+CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o: /usr/local/include/dkulpaclibs/misc/Thread.h
+CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o: /usr/local/include/dkulpaclibs/misc/debug/Log.h
 

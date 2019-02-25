@@ -12,29 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e71902-954f-4269-adba-c8322c5e7f98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Finddkulpaclibs.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Finddkulpaclibs.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/bluetooth/BluetoothManager.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/libdkulpahw.a" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/libdkulpahw.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PostPairs.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON.h" beforeDir="false" afterPath="$PROJECT_DIR$/PostPairs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Thread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/Thread.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dkulpamisc.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dkulpamisc.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libdkulpamisc.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libdkulpamisc.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +39,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -56,30 +49,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Thread.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Thread.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#45#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PostPairs.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="504">
               <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -135,12 +107,12 @@
         <option value="$PROJECT_DIR$/Finddkulpaclibs.cmake" />
         <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/debug/Log.cpp" />
-        <option value="$PROJECT_DIR$/Thread.h" />
-        <option value="$PROJECT_DIR$/Thread.cpp" />
         <option value="$PROJECT_DIR$/JSON.h" />
         <option value="$PROJECT_DIR$/JSON.cpp" />
         <option value="$PROJECT_DIR$/PostPairs.h" />
         <option value="$PROJECT_DIR$/PostPairs.cpp" />
+        <option value="$PROJECT_DIR$/Thread.h" />
+        <option value="$PROJECT_DIR$/Thread.cpp" />
       </list>
     </option>
   </component>
@@ -239,18 +211,20 @@
       <workItem from="1545955468369" duration="3787000" />
       <workItem from="1546088255556" duration="3840000" />
       <workItem from="1546396714771" duration="984000" />
-      <workItem from="1546423666625" duration="794000" />
+      <workItem from="1546423666625" duration="2788000" />
+      <workItem from="1551083033311" duration="142000" />
+      <workItem from="1551121796076" duration="784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28426000" />
+    <option name="totallyTimeSpent" value="31346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30500758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31562975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,26 +280,12 @@
     <entry file="file://$PROJECT_DIR$/json.cpp" />
     <entry file="file://$PROJECT_DIR$/json.h" />
     <entry file="file://$PROJECT_DIR$/JSONParser.h" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/PostPairs.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="504">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
           <folding>
-            <element signature="e#45#65#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -357,13 +317,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PostPairs.cpp">
+    <entry file="file://$PROJECT_DIR$/Thread.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="220">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#45#65#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>

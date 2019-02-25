@@ -125,7 +125,6 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
     sdp_session_t *session = 0;
 
     // set the general service ID
-    Log::write(BM_TAG, "Set the general service ID");
     sdp_uuid128_create(&svc_uuid, &svc_uuid_int);
     sdp_set_service_id(&record, svc_uuid);
 
@@ -133,32 +132,27 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
     sdp_uuid2strn(&svc_uuid, str, 256);
 
     // set the service class
-    Log::write(BM_TAG, "Set the service class");
     sdp_uuid16_create(&svc_class_uuid, SERIAL_PORT_SVCLASS_ID);
     svc_class_list = sdp_list_append(0, &svc_class_uuid);
     sdp_set_service_classes(&record, svc_class_list);
 
     // set the Bluetooth profile information
-    Log::write(BM_TAG, "Set the Bt profile info");
     sdp_uuid16_create(&profile.uuid, SERIAL_PORT_PROFILE_ID);
     profile.version = 0x0100;
     profile_list = sdp_list_append(0, &profile);
     sdp_set_profile_descs(&record, profile_list);
 
     // make the service record publicly browsable
-    Log::write(BM_TAG, "Make the service record publicly browsable");
     sdp_uuid16_create(&root_uuid, PUBLIC_BROWSE_GROUP);
     root_list = sdp_list_append(0, &root_uuid);
     sdp_set_browse_groups(&record, root_list);
 
     // set l2cap information
-    Log::write(BM_TAG, "Set l2cap info");
     sdp_uuid16_create(&l2cap_uuid, L2CAP_UUID);
     l2cap_list = sdp_list_append(0, &l2cap_uuid);
     proto_list = sdp_list_append(0, l2cap_list);
 
     // register the RFCOMM chanenel for RFCOMM sockets
-    Log::write(BM_TAG, "Register the RFCOMM channel for RFCOMM socket");
     sdp_uuid16_create(&rfcomm_uuid, RFCOMM_UUID);
     channel = sdp_data_alloc(SDP_UINT8, &ch);
     rfcomm_list = sdp_list_append(0, &rfcomm_uuid);
@@ -169,17 +163,14 @@ sdp_session_t *BluetoothManager::register_service(uint8_t ch) {
     sdp_set_access_protos(&record, access_proto_list);
 
     // set the name, provider, and description
-    Log::write(BM_TAG, "Set the name, provider and descriptor");
     sdp_set_info_attr(&record, service_name, service_prov, service_dsc);
 
     // connect to the local SDP server, register the service record,
     // and disconnect
-    Log::write(BM_TAG, "Connect to the local SDP server, register the service record and disconnect");
     session = sdp_connect(anyAddr, localAddr, SDP_RETRY_IF_BUSY);
     sdp_record_register(session, &record, 0);
 
     // cleanup
-    Log::write(BM_TAG, "Cleanup");
     sdp_data_free(channel);
     sdp_list_free(l2cap_list, 0);
     sdp_list_free(rfcomm_list, 0);
@@ -196,13 +187,10 @@ void BluetoothManager::open() {
     remAddr = { 0 };    //Remote address
 
     //Create socket
-    Log::write(BM_TAG, "Create socket");
     soc = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM);
-    Log::write(BM_TAG, "Set non blocking");
     fcntl(soc, F_SETFL, O_NONBLOCK);
 
     //Find free port
-    Log::write(BM_TAG, "Find free port");
     int status;
     uint8_t ch;
     locAddr.rc_family = AF_BLUETOOTH;
@@ -214,11 +202,9 @@ void BluetoothManager::open() {
     }
 
     //Register SPP service
-    Log::write(BM_TAG, "Register SPP service");
     session= register_service(ch);
 
     //Put socket into listening mode, set timeout val
-    Log::write(BM_TAG, "Put socket into listening mode");
     listen(soc, 1);
     ba2str(&locAddr.rc_bdaddr, buff);
 }

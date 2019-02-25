@@ -81,3 +81,8 @@ void Thread::pause(long ms) {
     struct timespec tp= {rs, rms*1000000};
     nanosleep(&tp, NULL);
 }
+
+void Thread::pauseUs(long us) {
+    struct timespec tp= {0, us*1000};
+    nanosleep(&tp, NULL);
+}
