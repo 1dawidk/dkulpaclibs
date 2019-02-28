@@ -13,21 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52e71902-954f-4269-adba-c8322c5e7f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../dkulpahw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/bluetooth/BluetoothManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/CMakeFiles/dkulpahw.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/libdkulpahw.a" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/cmake-build-debug/libdkulpahw.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Thread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/Thread.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dkulpamisc.dir/Thread.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libdkulpamisc.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libdkulpamisc.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +25,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ConfigManager.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ConfigManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding>
+                <element signature="e#60#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,6 +122,7 @@
         <option value="$PROJECT_DIR$/PostPairs.cpp" />
         <option value="$PROJECT_DIR$/Thread.h" />
         <option value="$PROJECT_DIR$/Thread.cpp" />
+        <option value="$PROJECT_DIR$/ConfigManager.h" />
       </list>
     </option>
   </component>
@@ -214,17 +224,20 @@
       <workItem from="1546423666625" duration="2788000" />
       <workItem from="1551083033311" duration="142000" />
       <workItem from="1551121796076" duration="784000" />
+      <workItem from="1551133648266" duration="23000" />
+      <workItem from="1551134517031" duration="13000" />
+      <workItem from="1551342491945" duration="1251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31346000" />
+    <option name="totallyTimeSpent" value="32633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31562975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33156297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -280,6 +293,30 @@
     <entry file="file://$PROJECT_DIR$/json.cpp" />
     <entry file="file://$PROJECT_DIR$/json.h" />
     <entry file="file://$PROJECT_DIR$/JSONParser.h" />
+    <entry file="file://$PROJECT_DIR$/Thread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#45#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PostPairs.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -317,27 +354,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Thread.h">
+    <entry file="file://$PROJECT_DIR$/ConfigManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="144">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
-            <element signature="e#45#65#0" expanded="true" />
+            <element signature="e#60#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Thread.cpp">
+    <entry file="file://$PROJECT_DIR$/ConfigManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
