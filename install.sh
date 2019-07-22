@@ -9,7 +9,7 @@
 # sudo chmod 777 /var/run/sdp
 
 echo "Install required dependencies"
-apt install libbluetooth-dev libasound2-dev libcurl4-openssl-dev libopencv-dev
+apt install libbluetooth-dev libasound2-dev libcurl4-openssl-dev libopencv-dev cmake
 
 echo "Config blueZ..."
 #sed -i -e 's/ExecStart=\/usr\/lib\/bluetooth\/bluetoothd/ExecStart=\/usr\/lib\/bluetooth\/bluetoothd --compat/g'
@@ -35,6 +35,7 @@ mkdir ./dkulpamisc/build
 cd ./dkulpamisc/build
 cmake ..
 make
+cp ./libdkulpamisc.a /usr/local/lib/libdkulpaclibs_misc.a
 cd ..
 
 rsync -av -m --include='*.h' --include='*/' --exclude='*' ./ /usr/local/include/dkulpaclibs/misc/
@@ -46,12 +47,8 @@ mkdir ./dkulpahw/build
 cd ./dkulpahw/build
 cmake ..
 make
+cp ./libdkulpahw.a /usr/local/lib/libdkulpaclibs_hw.a
 cd ..
 
 rsync -av -m --include='*.h' --include='*/' --exclude='*' ./ /usr/local/include/dkulpaclibs/hw/
 cd ..
-
-#Copy misc bin
-echo "Copy binary files..."
-cp ./dkulpamisc/build/libdkulpamisc.a /usr/local/lib/libdkulpaclibs_misc.a
-cp ./dkulpahw/build/libdkulpahw.a /usr/local/lib/libdkulpaclibs_hw.a

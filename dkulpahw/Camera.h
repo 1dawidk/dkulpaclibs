@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <highgui.h>
+#include <opencv2/videoio.hpp>
 
 class Camera {
 public:
