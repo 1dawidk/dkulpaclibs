@@ -50,6 +50,8 @@ void* Thread::threadExec(void *context) {
 
 void Thread::kill() {
     pthread_kill(threadHandle,SIGKILL);
+    onStop();
+    finished= true;
 }
 
 int Thread::getId() {
