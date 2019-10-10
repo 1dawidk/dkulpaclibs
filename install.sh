@@ -9,7 +9,7 @@
 # sudo chmod 777 /var/run/sdp
 
 echo "Install required dependencies"
-apt install libbluetooth-dev libasound2-dev libcurl4-openssl-dev libopencv-dev cmake
+apt install libbluetooth-dev libasound2-dev libcurl4-openssl-dev libopencv-dev cmake rsync g++
 
 echo "Config blueZ..."
 #sed -i -e 's/ExecStart=\/usr\/lib\/bluetooth\/bluetoothd/ExecStart=\/usr\/lib\/bluetooth\/bluetoothd --compat/g'
