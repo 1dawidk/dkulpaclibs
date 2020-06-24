@@ -63,3 +63,17 @@ int Clock::getMinutes() {
 
     return aTime->tm_min;
 }
+
+int Clock::getSeconds(){
+    time_t theTime= time(NULL);
+    struct tm *aTime= localtime(&theTime);
+
+    return aTime->tm_sec;
+}
+
+char* Clock::getZone(){
+    time_t theTime= time(NULL);
+    struct tm *aTime= localtime(&theTime);
+
+    return aTime->tm_zone;
+}
