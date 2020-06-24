@@ -71,7 +71,7 @@ int Clock::getSeconds(){
     return aTime->tm_sec;
 }
 
-char* Clock::getZone(){
+const char* Clock::getTimeZone(){
     time_t theTime= time(NULL);
     struct tm *aTime= localtime(&theTime);
 

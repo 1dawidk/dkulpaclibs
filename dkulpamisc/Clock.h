@@ -19,6 +19,8 @@ public:
     static int getDay();
     static int getHour();
     static int getMinutes();
+    static int getSeconds();
+    static const char* getTimeZone();
 
 };
 
