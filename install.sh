@@ -25,9 +25,9 @@ mkdir -p /usr/local/include/dkulpaclibs/hw
 
 #Copy find file
 echo "Copy cmake Find file..."
-cp ./Finddkulpaclibs.cmake /usr/local/lib/cmake/Finddkulpaclibs.cmake
-cp ./Finddkulpaclibs.cmake /usr/share/cmake-3.7/Modules/Finddkulpaclibs.cmake
-cp ./Finddkulpaclibs.cmake /home/dkulpa/ToolBox/CLion/bin/cmake/linux/share/cmake-3.13/Modules/Finddkulpaclibs.cmake
+find / -wholename '*/cmake-*/Modules' | while read line; do
+	cp ./Finddkulpaclibs.cmake $line/
+done
 
 #Build misc library
 echo "Building dkulpaclibs misc..."
