@@ -16,24 +16,6 @@ chrono
 time.h
 -
 
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.cpp
-iostream
--
-ConfigManager.h
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.h
-
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/ConfigManager.h
-string
--
-cstring
--
-fstream
--
-vector
--
-rapidxml-1.13/rapidxml.hpp
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/rapidxml-1.13/rapidxml.hpp
-
 /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/PostPairs.cpp
 PostPairs.h
 /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/PostPairs.h
@@ -75,14 +57,4 @@ string
 -
 ../Thread.h
 /home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/Thread.h
-
-/home/dkulpa/ToolBox/CLionProjects/dkulpaclibs/dkulpamisc/rapidxml-1.13/rapidxml.hpp
-cstdlib
--
-cassert
--
-new
--
-exception
--
 

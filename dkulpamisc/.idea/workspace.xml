@@ -12,9 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e71902-954f-4269-adba-c8322c5e7f98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/dkulpahw.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../dkulpahw/build/CMakeFiles/dkulpahw.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Clock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Clock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/dkulpamisc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/dkulpamisc.dir/CXX.includecache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +36,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1336" />
-    <option name="height" value="569" />
   </component>
   <component name="ProjectId" id="1dgC0Z3x1YztrHic0NWf62pD4xr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -106,7 +110,8 @@
       <workItem from="1552433062952" duration="407000" />
       <workItem from="1567806200862" duration="173000" />
       <workItem from="1592837128798" duration="47000" />
-      <workItem from="1592987157468" duration="58000" />
+      <workItem from="1592987157468" duration="117000" />
+      <workItem from="1597048489559" duration="546000" />
     </task>
     <servers />
   </component>
