@@ -6,6 +6,9 @@
 #include <vector>
 #include "Clock.h"
 
+
+typedef pthread_mutex_t Mutex;
+
 class Thread {
 public:
     virtual void start();
@@ -14,6 +17,10 @@ public:
     void stop();
     void kill();
     int getId();
+
+    static void initMutex(Mutex &m);
+    static void lockMutex(Mutex &m);
+    static void unlockMutex(Mutex &m);
 
 protected:
     virtual void onStart()=0;
@@ -26,6 +33,7 @@ protected:
 
     static void pause(long ms);
     static void pauseUs(long us);
+
 private:
     bool finished;
     int id;
@@ -35,6 +43,8 @@ private:
     static Thread* findThreadById(int id);
     static int findThreadPosById(int id);
 };
+
+
 
 
 #endif //MISC_THREAD_H

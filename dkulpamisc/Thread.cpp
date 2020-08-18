@@ -88,3 +88,15 @@ void Thread::pauseUs(long us) {
     struct timespec tp= {0, us*1000};
     nanosleep(&tp, NULL);
 }
+
+void Thread::initMutex(Mutex &m) {
+    m= PTHREAD_MUTEX_INITIALIZER;
+}
+
+void Thread::lockMutex(Mutex &m) {
+    pthread_mutex_lock(&m);
+}
+
+void Thread::unlockMutex(Mutex &m) {
+    pthread_mutex_unlock(&m);
+}
